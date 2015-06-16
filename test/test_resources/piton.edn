@@ -1,0 +1,1 @@
+{:seeds ["1-seed-test.sql" "2-seed-test.sql" "3-seed-test.sql"], :mig-path "migs", :migrations ["1-mig-test.sql" "2-mig-test.sql" "3-mig-test.sql"], :seed-path "seeds"}
