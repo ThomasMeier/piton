@@ -1,5 +1,7 @@
 # piton
 
+[![Build Status](https://travis-ci.org/ThomasMeier/piton.svg?branch=master)](https://travis-ci.org/ThomasMeier/piton)
+
 A Clojure library for performing SQL migrations and seeding.
 
 ## Installation
