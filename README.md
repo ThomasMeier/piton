@@ -11,13 +11,14 @@ in both local and production environments.
 
 In your `~/.lein/profiles.clj`:
 
-    {:user {:plugins  [[lein-piton "0.1.0"]]}}
+    {:user {:plugins [[lein-piton "0.1.0"]]}}
 
 In each `project.clj` that will use piton,
 
     {:dependencies [[piton "0.1.0"]]}
 
-Then, in your **project's** profiles.clj, you'll need to give piton some extra information
+Then, in your **project's** `profiles.clj`, you'll need to give `lein-piton`
+this information.
 
     {:dev {:piton {:dburl "jdbc:postgresql://localhost:5432/yourdb"
                            :dbuser "postgres"
@@ -44,7 +45,6 @@ To create a new seed
 In both of the above cases, a file will be generated for you. Inside each is a
 necessary comment stating: `-- rollback`, write the migration above it, and its
 rollback underneath.
-
 
 To perform migrations and seeds
 
