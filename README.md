@@ -17,6 +17,16 @@ In each `project.clj` that will use piton,
 
     {:dependencies [[piton "0.1.0"]]}
 
+Then, in your **project's** profiles.clj, you'll need to give piton some extra information
+
+    {:dev {:piton {:dburl "jdbc:postgresql://localhost:5432/yourdb"
+                           :dbuser "postgres"
+                           :dbpass "secret"}}}
+
+Optionally, you can also add `:mig-path` and `:seed-path` to the piton map
+ above to specify different directories within your resources directory to
+  place migration files
+
 ## Usage
 
 #### Development environment
@@ -61,7 +71,7 @@ You can also handle all migrations programmatically if you need to customize
 When you create an uberjar and deploy, you will need to run the piton core class
 with arguments for password and username and database address.
 
-    $ java -cp your-standalone.jar piton.love $dburl $dbuser $dbpass [migrate|seed|rollback]
+    $ java -cp your-standalone.jar piton.live $dburl $dbuser $dbpass [migrate|seed|rollback]
 
 ## License
 
