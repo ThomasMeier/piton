@@ -23,8 +23,8 @@ Then, in your **project's** `profiles.clj`, you'll need to give `lein-piton`
 this information.
 
     {:dev {:piton {:dburl "jdbc:postgresql://localhost:5432/yourdb"
-                           :dbuser "postgres"
-                           :dbpass "secret"}}}
+                   :dbuser "postgres"
+                   :dbpass "secret"}}}
 
 Optionally, you can also add `:mig-path` and `:seed-path` to the piton map
  above to specify different directories within your resources directory to
