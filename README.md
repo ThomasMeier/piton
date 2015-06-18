@@ -60,8 +60,11 @@ To perform migrations and seeds
 
 To perform rollbacks
 
+    # Rollback last batch
     $ lein piton rollback seeds
     $ lein piton rollback migrations
+    
+    # Rollback selectively
     $ lein piton rollback migrations add-table-to-my-database
     $ lein piton rollback seeds insert-data-to-my-table
 
@@ -70,7 +73,7 @@ You can also handle all migrations programmatically if you need to customize
 
 #### Production environment
 
-When you create an uberjar and deploy, you will need to run the piton core class
+When you create an uberjar and deploy, you will need to run the piton.live class
 with arguments for password and username and database address.
 
     $ java -cp your-standalone.jar piton.live $dburl $dbuser $dbpass [migrate|seed|rollback]
