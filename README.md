@@ -63,10 +63,12 @@ To perform rollbacks
     # Rollback last batch
     $ lein piton rollback seeds
     $ lein piton rollback migrations
-    
+
     # Rollback selectively
     $ lein piton rollback migrations add-table-to-my-database
     $ lein piton rollback seeds insert-data-to-my-table
+
+If you have been adding migrations or seeds manually and need to generate a new `piton.edn` file, you can use `lein piton edn`.
 
 You can also handle all migrations programmatically if you need to customize
  things further.
