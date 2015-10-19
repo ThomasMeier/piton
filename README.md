@@ -48,6 +48,12 @@ In both of the above cases, a file will be generated for you. Inside each is a
 necessary comment stating: `-- rollback`, write the migration above it, and its
 rollback underneath.
 
+Tip: If you make a mistake and need to rewrite the migrations list, say you
+mis-name a migration file and go into the migrations directory and delete it,
+you will want to reload the piton edn file.
+
+    $ lein piton refresh
+
 To perform migrations and seeds
 
     # Apply all
