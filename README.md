@@ -13,11 +13,11 @@ in both local and production environments.
 
 In your `~/.lein/profiles.clj`:
 
-    {:user {:plugins [[lein-piton "0.1.0"]]}}
+    {:user {:plugins [[lein-piton "0.1.1"]]}}
 
 In each `project.clj` that will use piton,
 
-    {:dependencies [[piton "0.1.0"]]}
+    {:dependencies [[piton "0.1.1"]]}
 
 Then, in your **project's** `profiles.clj`, you'll need to give `lein-piton`
 this information.
