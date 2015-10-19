@@ -1,4 +1,4 @@
-(defproject piton "0.1.0"
+(defproject piton "0.1.1"
   :description "SQL Migrations and seeding for Clojure projects"
   :url "https://github.com/thomasmeier"
   :dependencies [[org.clojure/clojure "1.6.0"]
